@@ -1,0 +1,10 @@
+<com.google.android.flexbox.FlexboxLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adapter_items"
+            card_view:flexWrap="wrap"
+            card_view:showDividerHorizontal="middle"
+            android:orientation="horizontal">
+        </com.google.android.flexbox.FlexboxLayout>
