@@ -1,0 +1,2 @@
+implementation 'com.githang:status-bar-compat:latest.integration'
+使用方法：StatusBarCompat.setStatusBarColor(this, Color.parseColor("#1CCCC6"),true);
