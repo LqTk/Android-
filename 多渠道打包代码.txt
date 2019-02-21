@@ -1,0 +1,212 @@
+//多渠道打包配置
+    productFlavors {
+        Tianhe {
+            dimension "color"
+            applicationId 'com.you007.tianhe'
+            resValue "string", "app_name", "天合停车"
+            //公司名称
+            resValue "string", "company", "微泊科技"
+            //http://app-2.parkbobo.com/                外网测试服务器地址
+            //http://app1.parkbobo.com/
+            resValue "string", "baseUrl", "http://app1.parkbobo.com/"
+            //客服电话配置
+            resValue "string", "kefuTel", "400-1003190"
+            resValue "string", "kefuTel_guangzhou", "400-8630208"
+            resValue "string", "WX_Pay_key", '"wx7a6920dd2b1922c9"'
+            //ShareSdk配置
+            buildConfigField "String", "APPKEY", '"4548f1fbbb86"'
+            //微信
+            buildConfigField "String", "APPID_CIRCLE_FRIEND", '"wx7a6920dd2b1922c9"'
+            buildConfigField "String", "APPSECRET_CIRCLE_FRIEND", '"350afe8de488ca18fc3e971fd62940e5"'
+            //QQ
+            buildConfigField "String", "APPID_QQFRIEND", '"100371282"'
+            buildConfigField "String", "APPKEY_QQFRIEND", '"aed9b0303e3ed1e27bae87c33761161d"'
+            //微博
+            buildConfigField "String", "APPKEY_SINA_WEIBO", '"1819576229"'
+            buildConfigField "String", "APPSECRET_SINA_WEIBO", '"24bb43d43f81a516ebe851abcedcde21"'
+            //分享页面链接配置
+            buildConfigField "String", "SHARE_URL", '"http://www.parkbobo.com/"'
+            buildConfigField "String", "SHARE_PIC_URL", '"http://a.app.qq.com/o/image/microQr.png?pkgName=com.you007.weibo"'
+            //客服电话隐藏与否
+            buildConfigField "boolean", "isShow", 'false'
+            manifestPlaceholders = [gaode_map_key : "ef97e01b281c8e9a5945a24ff9b2bf09",
+                                    lq_map_key    : "6OU49uRpbH0vxaI6uGUcwb35z5ls1HdZbgkqc31z",
+                                    UMENG_APPKEY  : "5461c210fd98c547f700207d",
+                                    //个推配置
+                                    PUSH_APPID    : "4QyEeEFZRq95oVGxe5EFR8",//
+                                    PUSH_APPKEY   : "rmQHSpVgzQAvFMCBSI0Zg5",
+                                    PUSH_APPSECRET: "WqkWHir6eHAcibPoTMC4U5",
+                                    //应用图标以及包名
+//                                    app_icon   : "@drawable/app_icon",
+                                    Package_Name  : "com.you007.tianhe",
+                                    APP_Key :"wx7a6920dd2b1922c9",
+
+            ]
+            signingConfig signingConfigs.release
+        }
+        /*Bobo {
+            dimension "color"
+            applicationId 'com.you007.weibo'
+            resValue "string", "app_name", "泊泊停车"
+            //公司名称
+            resValue "string", "company", "微泊科技"
+            //http://app-2.parkbobo.com/                外网测试服务器地址
+            //http://app1.parkbobo.com/
+            resValue "string", "baseUrl", "http://app1.parkbobo.com/"
+            //客服电话配置
+            resValue "string", "kefuTel", "400-1003190"
+            resValue "string", "kefuTel_guangzhou", "400-8630208"
+            resValue "string", "WX_Pay_key", '"wx7a6920dd2b1922c9"'
+            //ShareSdk配置
+            buildConfigField "String", "APPKEY", '"4548f1fbbb86"'
+            //微信
+            buildConfigField "String", "APPID_CIRCLE_FRIEND", '"wx7a6920dd2b1922c9"'
+            buildConfigField "String", "APPSECRET_CIRCLE_FRIEND", '"350afe8de488ca18fc3e971fd62940e5"'
+            //QQ
+            buildConfigField "String", "APPID_QQFRIEND", '"100371282"'
+            buildConfigField "String", "APPKEY_QQFRIEND", '"aed9b0303e3ed1e27bae87c33761161d"'
+            //微博
+            buildConfigField "String", "APPKEY_SINA_WEIBO", '"1819576229"'
+            buildConfigField "String", "APPSECRET_SINA_WEIBO", '"24bb43d43f81a516ebe851abcedcde21"'
+            //分享页面链接配置
+            buildConfigField "String", "SHARE_URL", '"http://www.parkbobo.com/"'
+            buildConfigField "String", "SHARE_PIC_URL", '"http://a.app.qq.com/o/image/microQr.png?pkgName=com.you007.weibo"'
+            //客服电话隐藏与否
+            buildConfigField "boolean", "isShow", 'false'
+            manifestPlaceholders = [gaode_map_key : "00031a2cf2f9a4ccd46fdbe42ef1bb06",
+                                    lq_map_key    : "6OU49uRpbH0vxaI6uGUcwb35z5ls1HdZbgkqc31z",
+                                    UMENG_APPKEY  : "5461c210fd98c547f700207d",
+                                    //个推配置
+                                    PUSH_APPID    : "4QyEeEFZRq95oVGxe5EFR8",//
+                                    PUSH_APPKEY   : "rmQHSpVgzQAvFMCBSI0Zg5",
+                                    PUSH_APPSECRET: "WqkWHir6eHAcibPoTMC4U5",
+                                    //应用图标以及包名
+//                                    app_icon   : "@drawable/app_icon",
+                                    Package_Name  : "com.you007.weibo",
+                                    APP_Key :"wx7a6920dd2b1922c9",
+
+            ]
+            signingConfig signingConfigs.release
+        }*/
+        /*Feibo {
+            dimension "color"
+            applicationId 'com.feibopark.trip'
+            resValue "string", "app_name", "飞泊出行"//配置app名称
+            resValue "string", "company", "飞泊出行"
+            resValue "string", "baseUrl", "http://b.freepark.net.cn/"//配置baseUrl
+            resValue "string", "WX_Pay_key", '"wxd18cc18b513e4765"'
+
+            //客服电话配置
+            resValue "string", "kefuTel", "020-83726693"
+            resValue "string", "kefuTel_guangzhou", "020-83726693"
+
+            //ShareSdk配置
+            buildConfigField "String", "APPKEY", '"1ee6aa910393a"'
+            //微信
+            buildConfigField "String", "APPID_CIRCLE_FRIEND", '"wxd18cc18b513e4765"'
+            buildConfigField "String", "APPSECRET_CIRCLE_FRIEND", '"a5e42b229fdd43fe9205e41234718f9a"'
+            //QQ
+            buildConfigField "String", "APPID_QQFRIEND", '"1106199189"'
+            buildConfigField "String", "APPKEY_QQFRIEND", '"iIOz6jtsHJjWv5SS"'
+            //微博
+            buildConfigField "String", "APPKEY_SINA_WEIBO", '"3568954273"'
+            buildConfigField "String", "APPSECRET_SINA_WEIBO", '"2b8a3550c1cf49db670d05cd5207d164"'
+
+            buildConfigField "String", "SHARE_URL", '"http://a.app.qq.com/o/simple.jsp?pkgname=com.feibopark.trip"'
+            buildConfigField "String", "SHARE_PIC_URL", '"http://o.app.qq.com/res/openqq/img/ewm2.png"'
+            //客服电话隐藏与否
+            buildConfigField "boolean", "isShow", 'true'
+            manifestPlaceholders = [gaode_map_key : "d580fed2f3ef58835be877f431b2fe19",//高德key
+                                    lq_map_key    : "SHV1OytLL1DuSoZ37PIGoVvcf9mgE6PDWHEXVy9H",//灵奇地图key
+                                    UMENG_APPKEY  : "594c84bfaed1795d4c000ee2",//友盟key
+                                    //个推配置
+                                    PUSH_APPID    : "80Ybrlu48Z6sX8WM9jU14A",
+                                    PUSH_APPKEY   : "CjfDpT5Dbj8RM3BQFF9KEA",
+                                    PUSH_APPSECRET: "H9Wz50zJPK73D6aAkKOSQ3",
+                                    //应用图标以及包名
+//                                    app_icon   : "@drawable/fb_ic_launcher",
+                                    Package_Name  : "com.feibopark.trip",
+                                    APP_Key : "wxd18cc18b513e4765",
+            ]
+            signingConfig signingConfigs.feibo
+        }*/
+       /* Chuangli {
+            dimension "color"
+            applicationId 'com.chuangli.trip'
+            resValue "string", "app_name", "创立停车"//配置app名称
+            resValue "string", "company", "创立停车"
+            resValue "string", "baseUrl", "http://b.freepark.net.cn/"//配置baseUrl
+
+            //客服电话配置
+            resValue "string", "kefuTel", "4006028093"
+            resValue "string", "kefuTel_guangzhou", "4008630208"
+            //ShareSdk配置
+            buildConfigField "String", "APPKEY", '"235861493174a"'
+            //微信
+            buildConfigField "String", "APPID_CIRCLE_FRIEND", '"wxd18cc18b513e4765"'
+            buildConfigField "String", "APPSECRET_CIRCLE_FRIEND", '"a5e42b229fdd43fe9205e41234718f9a"'
+            //QQ
+            buildConfigField "String", "APPID_QQFRIEND", '"1106199189"'
+            buildConfigField "String", "APPKEY_QQFRIEND", '"SyuVnFmiO3G9WfMh"'
+            //微博
+            buildConfigField "String", "APPKEY_SINA_WEIBO", '"4072371119"'
+            buildConfigField "String", "APPSECRET_SINA_WEIBO", '"bc04828e5c3bd5f78d6b239997c06892"'
+            //分享链接
+            buildConfigField "String", "SHARE_URL", '"http://a.app.qq.com/o/simple.jsp?pkgname=com.chuangli.trip"'
+//下载链接
+            buildConfigField "String", "SHARE_PIC_URL", '"http://o.app.qq.com/res/openqq/img/ewm2.png"'
+//二维码
+            //客服电话隐藏与否
+            buildConfigField "boolean", "isShow", 'true'
+            manifestPlaceholders = [gaode_map_key : "3e1f485844ae6c01286b1a881eff6cd3",//高德key
+                                    lq_map_key    : "msT0dVP4Nvsfn5VlWKfYoAicf3FxFdN8jVJybn5d",//灵奇地图key
+                                    UMENG_APPKEY  : "5a4309d5b27b0a147300000c",//友盟key
+                                    //个推配置
+                                    PUSH_APPID    : "DSTLjeXFtY99vWgWmTLsQ3",
+                                    PUSH_APPKEY   : "gKkTtoPvqV7wIZ1xbKIwR9",
+                                    PUSH_APPSECRET: "6WHaYU5xNc6VZkUGgwsbc6",
+//                                    app_icon   : "@drawable/chuangli",
+                                    Package_Name  : "com.chuangli.trip"]
+            signingConfig signingConfigs.release
+        }
+        Parktlm {
+            dimension "color"
+            applicationId 'com.parktlm.trip'
+            resValue "string", "app_name", "停了吗"//配置app名称
+            resValue "string", "company", "停了吗"
+            resValue "string", "baseUrl", "http://b.freepark.net.cn/"//配置baseUrl
+
+            //客服电话配置
+            resValue "string", "kefuTel", "4006028093"
+            resValue "string", "kefuTel_guangzhou", "4008630208"
+            //ShareSdk配置
+            buildConfigField "String", "APPKEY", '"237c477e73e91"'
+            //微信
+            buildConfigField "String", "APPID_CIRCLE_FRIEND", '"wxd18cc18b513e4765"'
+            buildConfigField "String", "APPSECRET_CIRCLE_FRIEND", '"a5e42b229fdd43fe9205e41234718f9a"'
+            //QQ
+            buildConfigField "String", "APPID_QQFRIEND", '"1106199189"'
+            buildConfigField "String", "APPKEY_QQFRIEND", '"SyuVnFmiO3G9WfMh"'
+            //微博
+            buildConfigField "String", "APPKEY_SINA_WEIBO", '"4072371119"'
+            buildConfigField "String", "APPSECRET_SINA_WEIBO", '"bc04828e5c3bd5f78d6b239997c06892"'
+            //分享链接
+            buildConfigField "String", "SHARE_URL", '"http://a.app.qq.com/o/simple.jsp?pkgname=com.parktlm.trip"'
+//下载链接
+            buildConfigField "String", "SHARE_PIC_URL", '"http://o.app.qq.com/res/openqq/img/ewm2.png"'
+//二维码
+            //客服电话隐藏与否
+            buildConfigField "boolean", "isShow", 'true'
+            manifestPlaceholders = [gaode_map_key : "e6e811584035e398add079d0e3618d92",//高德key
+                                    lq_map_key    : "lmeObVHTyqxyoPh1btH7cd8HBbPm77OyvYToP84J",//灵奇地图key
+                                    UMENG_APPKEY  : "5a4c4796f29d98560400003c",//友盟key
+                                    //个推配置
+                                    PUSH_APPID    : "Syd9ZuMvDU82ielxx3bp41",
+                                    PUSH_APPKEY   : "nqYaycHJan5wDyuRFGVEP4",
+                                    PUSH_APPSECRET: "WfwRh7VSu48gtcpr73JfJ5",
+//                                    app_icon   : "@drawable/chuangli",
+                                    Package_Name  : "com.parktlm.trip"]
+            signingConfig signingConfigs.release
+        }*/
+
+    }
